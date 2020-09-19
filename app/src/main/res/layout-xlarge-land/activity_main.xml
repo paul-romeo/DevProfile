@@ -7,7 +7,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/banner_image"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/devslopesbanner" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
@@ -29,15 +29,15 @@
         app:srcCompat="@drawable/devslopesprofilelogo" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/devslop_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="Devslopes"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/logo_image"
+        app:layout_constraintTop_toBottomOf="@+id/banner_image" />
 
     <Button
         android:id="@+id/button2"
@@ -50,45 +50,45 @@
         android:text="Customize Dashboard"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/banner_image" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/inbox_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="@+id/favorite_button"
         app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/favorite_button"
+        app:layout_constraintTop_toTopOf="@+id/favorite_button"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/inboxbutton" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/favorite_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_button"
+        app:layout_constraintEnd_toStartOf="@+id/inbox_button"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/camera_button"
+        app:layout_constraintTop_toTopOf="@+id/camera_button"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/favoritebutton" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/camera_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/favorite_button"
         app:layout_constraintHorizontal_bias="0.66"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/devslop_text"
+        app:layout_constraintTop_toBottomOf="@+id/banner_image"
         app:srcCompat="@drawable/camerabutton" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -107,7 +107,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintDimensionRatio="h,9:16"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image"
         app:srcCompat="@drawable/dataimage" />
 
     <ImageView
