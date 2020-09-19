@@ -16,6 +16,6 @@ class MainActivity : AppCompatActivity() {
 
         rounded.cornerRadius = 15f
 //        rounded.isCircular = true
-        logo.setImageDrawable(rounded)
+        logo_image.setImageDrawable(rounded)
     }
 }
